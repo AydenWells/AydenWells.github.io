@@ -16,16 +16,17 @@ body{
     margin: 10px;
     border: 4px solid #20B2AA;
 }
-.assignment img {
+
+.assignment img:hover {
     border: 4px dashed #000;
 }
 
-h1:hover {
+h1 {
     color:#5D7F71;
     text-align:center; 
 }
 
-h1 {
+h1:hover {
     color:#000;
 }
 
