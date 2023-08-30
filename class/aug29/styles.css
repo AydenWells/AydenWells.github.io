@@ -1,0 +1,40 @@
+/* Structure */
+
+body {
+    background-color:azure;
+
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+}
+
+td, 
+th {
+    border: 5px soild black;
+}
+
+th{
+    background: green;
+}
+
+/* Typogrpahy/Fonts */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p{
+    color:chartreuse;
+}
+
+h1{
+    background-color: blueviolet;
+    color:crimson
+}
+
+h2{
+    color: coral;
+}
