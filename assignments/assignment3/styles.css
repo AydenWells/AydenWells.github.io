@@ -138,5 +138,9 @@ body{
     .container {
         display: flex;
     }
+
+    .columns{
+        display: flex;
+    }
 }
 
