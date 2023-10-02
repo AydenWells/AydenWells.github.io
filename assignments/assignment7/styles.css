@@ -1,0 +1,139 @@
+    
+:root{
+    --primary: black; 
+    --secondary: cornflowerblue; 
+    --num: 15%;
+}
+
+
+/* Structure */
+body{
+    background-color: Black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+#main-content {
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 300px;
+    border-radius: 5px;
+    height: 600px; /* Adjust the height as needed to make them equal */
+    display: inline-block;
+} 
+
+#main-div{
+    padding: 5px;
+}
+
+/* styles.css */
+#man-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    
+}
+
+#man-image {
+    position: absolute;
+    bottom: 0;
+    left: var(--man-left, 0);
+    transition: left 1s ease-in-out, content 0.5s; /* Transition for left and image source */
+    width: 100px; /* Adjust the width and height according to your image size */
+    height: auto;
+}
+
+
+
+
+/* Form */
+label,
+input {
+    display: block;
+}
+
+label {
+    width: 100px;
+    text-align: left;
+    padding: 5px ;
+    margin: auto; 
+}
+
+
+/* Typography */
+
+
+.thermometer {
+    position: relative;
+    width: 90px;
+    height: 300px;
+    background: white;
+    margin: 5px;
+}
+
+.fill {
+    width: var(--fill-width);
+    height: 100%;
+    background: linear-gradient(180deg, darkblue var(--fill-width), skyblue var(--fill-width));
+    position: absolute;
+    bottom: 0;
+    transition: width 2s ease-in-out;
+}
+
+
+    .input-container {
+        align-items: center; 
+    }
+    
+    
+    .input-container label {
+        margin-right: 10px;
+    }
+    
+    #updateButton {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        margin-left: 10px;
+        clear: left;
+    }
+
+    #donationAmount {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 900px) {
+    
+   
+    #main-div{
+        display: flex;
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    .input-container {
+        display: flex;
+
+    }
+        .main-container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+}
+
+
