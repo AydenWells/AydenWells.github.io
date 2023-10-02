@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateThermometer();
 });
 
-const manImage = document.getElementById('man-image');
+const manImage = document.getElementById("man-image");
 let isRunning = false;
 
 function toggleImage() {
@@ -40,10 +40,9 @@ function toggleImage() {
     const currentLeft = parseFloat(getComputedStyle(manImage).getPropertyValue('--man-left')) || 0;
     const newLeft = currentLeft + containerWidth * 0.1;
 
-    manImage.style.setProperty('--man-left', `${newLeft}px`);
 }
 
-setInterval(toggleImage, 2000);
+setInterval(toggleImage, 200);
 
 toggleImage();
 
