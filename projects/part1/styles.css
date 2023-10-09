@@ -54,6 +54,7 @@ h1{
 .hide-small {
     display: none;
 }
+
 .hidden {
     display: none;
 }
@@ -86,24 +87,11 @@ main{
     text-align: center;
 }
 
-
-.col1of2{
-    text-align: center;; 
-    padding: 5px;
-    margin: 5px; 
-    border-radius: 5px;
- 
-}
-
 .col1of3 {
     padding: 5px;
     margin: 5px; 
     border-radius: 5px; 
 }
-
-
-
-
 
 /* Structure */
 body{
@@ -120,6 +108,10 @@ body{
        border-radius: 7px;
    }
    
+   .align-right {
+    text-align: right;
+}
+
        .col1of2{
            text-align: center;
            background-color:#1b6481; 
@@ -152,8 +144,45 @@ body{
     padding: 0; 
 }
 
+.content-container {
+    text-align: left;
+    margin-left: 20px; 
+}
+
+
+
+.solid-line2 {
+    width: 30%;
+    border: none;
+    border-top: 1px solid #000;
+    margin-left: 0;
+}
+
 .column-of-columns p{
     text-align: left; 
+    }
+
+    .content-container2 h2 {
+        text-align: left;
+    }
+
+    .pair {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px; 
+    
+    
+    }
+
+    .image-section {
+        flex: 1;
+        padding: 10px; /* Add padding for spacing */
+        border: 1px solid #ccc; /* Add borders for visual separation */
+        text-align: left;
+    }
+    
+    .text-section {
+        text-align: right;
     }
 
 /* Larger Resolutions */
@@ -164,6 +193,8 @@ body{
     display: flex; 
 }
 
+
+
 #main-nav ul{
     justify-content: center;
 }
@@ -171,14 +202,14 @@ body{
 #main-nav ul {
     display: flex; 
 }
+
 #main-nav li{
     flex: 1;   
 } 
 
-
 .flex-container {
     justify-content: space-between;
-            flex-direction: column;
+    flex-direction: column;
 }
 
 .container1{
@@ -197,7 +228,7 @@ body{
   }
   
 
-  .columns, .columns2 {
+  .columns, .columns2, .columns3 {
     display: flex;
     flex-wrap: wrap;
      justify-content: space-between; 
@@ -209,12 +240,15 @@ body{
      justify-content: space-between; 
      text-align: left;
 }
+#nav-items {
+    display: flex;
+}
 
-
-
+}
 #hamburger {
     display: none;
 }
+
 .hide-small {
     display: block;
 }
@@ -222,12 +256,30 @@ body{
 #nav-toggle {
     display: flex;
 } 
+
 #logo {
     max-width: 80%; 
 }
 
+.pair {
+    display: flex;
+
 
 }
 
-  
- 
+    #nav-items {
+        display: flex;
+    }
+
+
+/* Small Screens */
+@media only screen and (max-width: 767px) {
+    #hamburger {
+        display: block;
+    }
+
+    #nav-items {
+        display: none;
+    }
+   
+}
