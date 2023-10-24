@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+  
+    <div class="parallax home">
+    </div>
+    <section class="info-section columns">
+      <section>
+        <h4>Admin Login</h4>
+        
+        <form id="form-product">
+          <p>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required />
+          </p>
+          <p>
+            <label for="birth-date">Date Released:</label>
+            <input type="date" id="birth-date" required />
+          </p>
+          <p>
+            <label for="colors">Main Color Presented:</label>
+            <select name="colors">
+              <option value="red">Red</option>
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="emerald">Emerald</option>
+              <option value="navy">Navy</option>
+              <option value="pink">Pink</option>
+              <option value="rainbow">Rainbow</option>
+              <option value="grey">Grey</option>
+              <option value="purple">Purple</option>
+            </select>
+          </p>
+          <p>
+            <label for="sizes">Main Size Presented:</label>
+            <select name="sizes">
+              <option value="xx-small">XX-Small</option>
+              <option value="x-small">X-Small</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="x-large">X-Large</option>
+              <option value="xx-large">XX-Large</option>
+              <option value="five">5</option>
+              <option value="five.five">5.5</option>
+              <option value="six">6</option>
+              <option value="siz.five">6.5</option>
+              <option value="seven">7</option>
+              <option value="seven.five">7.5</option>
+              <option value="eight">8</option>
+              <option value="eight.five">8.5</option>
+              <option value="nine">9</option>
+              <option value="nine.five">9.5</option>
+              <option value="ten">10</option>
+              <option value="ten.five">10.5</option>
+              <option value="eleven">11</option>
+              <option value="eleven.five">11.5</option>
+              <option value="twelve">12</option>
+              <option value="twelve.five">12.5</option>
+              <option value="thirteen">13</option>
+              <option value="twelve.five">13.5</option>
+              <option value="fourteen">14</option>
+              <option value="fourteen.five">14.5</option>
+              <option value="fifteen">15</option>
+              <option value="fifteen.five">15.5</option>
+              <option value="sixteen">16</option>
+              <option value="sixteen.five">16.5</option>
+
+
+            </select>
+          </p>
+
+          <p>
+            <input type="checkbox" name="terms" /><label
+              for="terms"
+              class="inline"
+              >I agree to the terms.</label
+            >
+          </p>
+
+          <p>
+            <button type="submit">Post</button>
+          </p>
+        </form>
+      </section>
+      <section id="results" class="hidden">
+        <h4>Results</h4>
+        <p>
+         Sent to Headquarters to be reviewed then posted! 
+        </p>
+      </section>
+      <iframe
+      id="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.137229765456!2d-81.0792263250148!3d34.04035077316145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a37d497e8009%3A0x30589b03b200835e!2s1811%20Romain%20Dr%2C%20Columbia%2C%20SC%2029210!5e0!3m2!1sen!2sus!4v1698134585906!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    </section>
+    <section class="parallax face">
+    </section>
+    <section class="info-section">
+      <h3>Contact Jasper</h3>
+      <div class="columns">
+        <form
+          id="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="Put your access key here"
+          />
+
+          <p>
+            <label for="name">Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="First and Last"
+              name="name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </p>
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Contact from Fushion Fashion Website"
+          />
+          <input type="hidden" name="from_managment" value="Fushion Fashion" />
+
+          <p>
+            <button type="submit">Submit Form</button>
+          </p>
+
+          <p id="result"></p>
+        </form>
+    
+      </div>
+    </section>
+    <script src="contactme.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
