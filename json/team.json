@@ -1,0 +1,27 @@
+[
+    {
+        "title": "President",
+        "name": "Frank Ford",
+        "img": "images/the-godfather.jpg"
+    },
+    {
+        "title": "CEO",
+        "name": "Amy Walter",
+        "img": "images/the-godfather.jpg"
+    },
+    {
+        "title": "Manager",
+        "name": "Sarah Washington",
+        "img": "images/the-godfather.jpg"
+    },
+    {
+        "title": "Warehouse Supervisor",
+        "name": "Bob White",
+        "img": "images/the-godfather.jpg"
+    },
+    {
+        "title": "Designer",
+        "name": "Carla Bonvechio",
+        "img": "images/the-godfather.jpg"
+    }
+]

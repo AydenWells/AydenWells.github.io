@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+    <body>
+        
+        <header class="main-header"> 
+            <div class ="container1">
+            <img id="image" src="images/logo.jpg" alt="Fusion Fashion Logo">
+            <h1>Fusion Fashion</h1>
+            <a href="AdminLogin.html"><img id="image2" src="images/adminLogin (1).jpg" alt="Fusion Fashion Admin Login"></a> 
+
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <nav id="main-nav"  class="hide-small">
+                    <ul id="nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="WomensFashion.html">Women's Fashion</a></li>
+                        <li><a href="MensFashion.html">Men's Fashion</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                </header>  
+                <br> 
+                <div class="columns3">
+                    <section class="col1of2">
+                       <div class="flex-container"> 
+                <main class="content-container">
+                    <h2>Contact Us:</h2>
+                    <hr class="solid-line2">
+                    <img src="images/phone.jpg"> <h2>Phone Suport:</h2>
+                    <p>Hours: 9am-5pm, Monday-Friday</p>
+                    <p>(123) 456-7899</p>
+                    <br>
+                    <hr class="solid-line2">
+                    <img src="images/email.jpg"><h2>Electronic Mail:</h2>
+                    <p>FusionFashionSupport@gmail.com</p>
+                    <br>
+                    <hr class="solid-line2">
+                    <img src="images/mail.jpg"><h2>Snail Mail:</h2>
+                    <p>FusionFashion</p>
+                    <p>PO Box 12345</p>
+                    <p>Columbia, SC 29201</p>
+                    <br>
+                </main>
+            </div>
+        </section>
+                        <section class="col1of2">
+                <div class="flex-container">
+                <main class="content-container2">
+                    <section class="parallax face">
+                    </section>
+                    <section class="info-section">
+                      <h3>Contact Us</h3>
+                      <br> 
+                      <div class="columns">
+                        <form
+                          id="contact-form"
+                          action="https://api.web3forms.com/submit"
+                          method="POST"
+                        >
+                        <input type="hidden" 
+                        name="access_key" 
+                        value="Put your access key here" 
+                        />
+
+                
+                          <p>
+                            <label for="name">Name:</label>
+                            <input
+                              id="name"
+                              type="text"
+                              placeholder="First and Last"
+                              name="name"
+                              required
+                            />
+                          </p>
+                          <p>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" required />
+                          </p>
+                          <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </p>
+                          <input
+                            type="hidden"
+                            name="redirect"
+                            value="https://web3forms.com/success"
+                          />
+                          <input
+                            type="hidden"
+                            name="subject"
+                            value="Contact from Fushion Fashion Website"
+                          />
+                          <input type="hidden" 
+                          name="from_managment" 
+                          value="Fushion Fashion" 
+                          />
+                
+                          <p>
+                            <button type="submit">Submit Form</button>
+                          </p>
+                
+                          <p id="result"></p>
+                        </form>
+                    
+                      </div>
+                    </section>
+                    <script src="contactme.js"></script>
+                </main>
+            </div>
+            <script src="script.js"></script>
+    </body>
+</html>
