@@ -1,33 +1,33 @@
 
-function createMovieContainer(movie) {
-    const movieContainer = document.createElement('div');
-    movieContainer.classList.add('movie-container');
+function createMemberContainer(member) {
+    const memberContainer = document.createElement('div');
+    memberContainer.classList.add('member-container');
   
-    const movieImage = document.createElement('img');
-    movieImage.classList.add('movie-images');
-    movieImage.src = movie.img;
-    movieImage.alt = movie.title;
-  
-    const movieDetails = document.createElement('div');
-    movieDetails.classList.add('movie-details');
+    const memberImage = document.createElement('img');
+    memberImage.classList.add('member-images');
+    memberImage.src = member.img;
+    memberImage.alt = member.title;
+
+
+    const memberDetails = document.createElement('div');
+    memberDetails.classList.add('member-details');
   
     const title = document.createElement('div');
-    title.classList.add('movie-titles');
-    title.innerHTML = `<strong>Title:</strong> ${movie.title}`;
+    title.classList.add('member-titles');
+    title.innerHTML = `<strong>Title:</strong> ${member.title}`;
   
-    const director = document.createElement('div');
-    director.classList.add('movie-directors');
-    director.innerHTML = `<strong>Director:</strong> ${movie.director}`;
+    const name = document.createElement('div');
+    name.classList.add('member-names');
+    name.innerHTML = `<strong>Director:</strong> ${member.name}`;
   
   
-    movieDetails.appendChild(title);
-    movieDetails.appendChild(director);
-    movieDetails.appendChild(actors);
+    memberDetails.appendChild(title);
+    memberDetails.appendChild(name);
   
-    movieContainer.appendChild(movieImage);
-    movieContainer.appendChild(movieDetails);
+    memberContainer.appendChild(memberImage);
+    memberContainer.appendChild(memberDetails);
   
-    return movieContainer;
+    return memberContainer;
   }
   
   
@@ -35,7 +35,7 @@ function createMovieContainer(movie) {
   
   
   
-  const getMovies = async () => {
+  const getMembers = async () => {
     const url = "https://aydenwells.github.io/json/team.json"; 
     try {
       const response = await fetch(url);
@@ -48,16 +48,16 @@ function createMovieContainer(movie) {
     }
   };
   
-  const showMovies = async () => {
-    let movies = await getMovies();
-    let moviesContainer = document.getElementById("movies-containers");
+  const showMembers = async () => {
+    let members = await getMembers();
+    let membersContainer = document.getElementById("members-containers");
   
-    movies.forEach((movie) => {
-      moviesContainer.append(createMovieContainer(movie));
+    members.forEach((member) => {
+      membersContainer.append(createMemberContainer(member));
     });
   };
   
   
-  window.onload = () => showMovies();
+  window.onload = () => showMembers();
   
   

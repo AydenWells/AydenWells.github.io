@@ -226,35 +226,41 @@ body{
     
 
 
-    #movies-containers {
+
+
+
+
+    #member-containers {
         flex-direction: column;
         align-items: center;
     }
     
-    .movie-container {
+    .member-container {
+        align-items: center;
         padding: 20px;
         margin: 20px;
-        background-color: rgb(35, 98, 215);
-        box-shadow: 5px 9px 0px rgb(6, 50, 131);
-        width: 1100px;
+        margin-left: 130px;
+        background-color: rgb(122, 223, 159);
+        box-shadow: 5px 9px 0px rgb(4, 85, 63);
+        width: 1000px;
     }
     
-    .movie-images {
+    .member-images {
         width: 120px;
         height: 120px;
         margin-right: 20px;
         object-fit: cover;
         transition: transform 0.2s;
-        border: 4px solid darkblue; 
+        border: 4px solid rgb(15, 95, 53); 
     }
     
     
-    .movie-images:hover {
-        transform: scale(2.5);
-        border: 5px solid darkblue; 
+    .member-images:hover {
+        transform: scale(1.2);
+        border: 5px solid rgb(15, 95, 53);
     }
 
-    .movie-titles {
+    .member-titles {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -262,80 +268,27 @@ body{
     }
     
     
-    .movie-director {
+    .member-name {
         font-size: 16px;
     }
     
-    .movie-year {
+    .member-year {
         font-size: 16px;
     }
     
-    .movie-descriptions {
-        margin-top: 10px;
-    }
-    
-    .movie-details div {
+   
+    .member-details div {
         align-items: center;
     }
       
-      .movie-details div strong {
+      .member-details div strong {
         width: 120px;
         display: inline-block;
         font-weight: bold;
         margin-right: 10px;
         text-align: right;
       }
-      
-      
-     .movie-descriptions div strong{
-        
-            width: 120px;
-            display: inline-block;
-            font-weight: bold;
-            margin-right: 10px;
-            text-align: right;
-          }
-     
-     
-      /* Larger Resolutions */
-    @media only screen and (min-width: 900px) {
-    
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        #movies-containers {
-            display: flex;
-        }
-        
-        .movie-container {
-            display: flex;
-        }
-    
-        .movie-details div {
-            display: flex;
-          }
-          
-    
-    }
-      
-      
-      
-    
-      
-      
-
-
-
-
-
-
-
-
-
-
-
+  
 /* Larger Resolutions */
 
 @media only screen and (min-width:768px){
@@ -405,8 +358,6 @@ body{
 
 
 
-
-
 #logo {
     max-width: 80%; 
 }
@@ -422,7 +373,18 @@ body{
     }
 
 
+    #member-containers {
+        display: flex;
+    }
+    
+    .member-container {
+        display: flex;
+    }
 
+    .member-details div {
+        display: flex;
+      }
+      
   
 
 /* Small Screens */
