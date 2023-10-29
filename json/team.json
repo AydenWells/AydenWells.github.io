@@ -2,7 +2,7 @@
     {
         "title": "President",
         "name": "Frank Ford",
-        "img": "images/the-godfather.jpg"
+        "img": "images/frank-ford.jpg"
     },
     {
         "title": "CEO",
@@ -17,11 +17,11 @@
     {
         "title": "Warehouse Supervisor",
         "name": "Bob White",
-        "img": "images/the-godfather.jpg"
+        "img": "images/bob-white.jpg"
     },
     {
         "title": "Designer",
         "name": "Carla Bonvechio",
-        "img": "images/the-godfather.jpg"
+        "img": "images/carla-bonvechio.jpg"
     }
 ]
