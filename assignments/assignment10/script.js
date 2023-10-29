@@ -4,7 +4,7 @@ function createMovieContainer(movie) {
     movieContainer.classList.add('movie-container');
   
     const movieImage = document.createElement('img');
-    movieImage.classList.add('movie-image');
+    movieImage.classList.add('movie-images');
     movieImage.src = movie.img;
     movieImage.alt = movie.title;
   
@@ -12,11 +12,11 @@ function createMovieContainer(movie) {
     movieDetails.classList.add('movie-details');
   
     const title = document.createElement('div');
-    title.classList.add('movie-title');
+    title.classList.add('movie-titles');
     title.innerHTML = `<strong>Title:</strong> ${movie.title}`;
   
     const director = document.createElement('div');
-    director.classList.add('movie-director');
+    director.classList.add('movie-directors');
     director.innerHTML = `<strong>Director:</strong> ${movie.director}`;
   
     const actors = document.createElement('div');
@@ -29,7 +29,7 @@ function createMovieContainer(movie) {
     genres.innerHTML = `<strong>Genres:</strong> ${movie.genres.join(', ')}`;
   
     const description = document.createElement('div');
-    description.classList.add('movie-description');
+    description.classList.add('movie-descriptions');
     description.innerHTML = ` ${movie.description}`;
   
     movieDetails.appendChild(title);
@@ -65,7 +65,7 @@ function createMovieContainer(movie) {
   
   const showMovies = async () => {
     let movies = await getMovies();
-    let moviesContainer = document.getElementById("movies-container");
+    let moviesContainer = document.getElementById("movies-containers");
   
     movies.forEach((movie) => {
       moviesContainer.append(createMovieContainer(movie));
